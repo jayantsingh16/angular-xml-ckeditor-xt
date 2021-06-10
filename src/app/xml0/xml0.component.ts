@@ -12,7 +12,16 @@ export class Xml0Component {
 
   constructor(private _http: HttpClient) { this.retrieveFile(); }
   retrieveFile() {
-    this._http.get('/assets/users.xml').subscribe(data => {
+    this._http.get('/assets/users.xml',
+      {
+        headers: new HttpHeaders()
+          .set('Content-Type', 'text/xml')
+          .append('Access-Control-Allow-Methods', 'GET')
+          .append('Access-Control-Allow-Origin', '*')
+          .append('Access-Control-Allow-Headers', "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method"),
+        responseType: 'text'
+      })
+      .subscribe(data => {
     console.log(data);
 })
   }
