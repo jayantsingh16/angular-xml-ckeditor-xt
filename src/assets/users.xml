@@ -1,0 +1,33 @@
+<?xml version="1.0"?>  
+<Employee>  
+    <emp>  
+        <id>1</id>  
+        <name>Chetan</name>  
+        <gender>Male</gender>  
+        <mobile>96202</mobile> 
+    </emp>  
+    <emp>  
+        <id>2</id>  
+        <name>Vipul</name>  
+        <gender>Male</gender>  
+        <mobile>33654</mobile>
+    </emp>  
+    <emp>  
+        <id>3</id>  
+        <name>Sazia</name>  
+        <gender>Female</gender>  
+        <mobile>95450</mobile> 
+    </emp>  
+    <emp>  
+        <id>4</id>  
+        <name>Kedar</name>  
+        <gender>Male</gender>  
+        <mobile>98609</mobile>
+    </emp>  
+    <emp>  
+        <id>5</id>  
+        <name>Jayant</name>  
+        <gender>Male</gender>  
+        <mobile>97730</mobile>  
+    </emp>  
+</Employee>
