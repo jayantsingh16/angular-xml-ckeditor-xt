@@ -37,6 +37,7 @@ export class Xml0Component {
         .append('Access-Control-Allow-Headers', "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method"),
       responseType: 'text'
     }).subscribe(data => {
+      console.log(data)
       this.editorData = data;
     })
   }
