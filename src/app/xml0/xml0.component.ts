@@ -11,7 +11,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class Xml0Component {
 
   public Editor = ClassicEditorWithAutosave;
-  public editorData: any;
+  public editorData: string;
   public config = {
     allowedContent: true,
     forcePasteAsPlainText: true,
@@ -36,8 +36,8 @@ export class Xml0Component {
         .append('Access-Control-Allow-Headers', "Access-Control-Allow-Headers, Access-Control-Allow-Origin, Access-Control-Request-Method"),
       responseType: 'text'
     }).subscribe(data => {
-      console.log(data)
-      this.editorData = data;
+      console.log(JSON.stringify(data))
+      this.editorData = JSON.stringify(data);
     })
   }
 }
