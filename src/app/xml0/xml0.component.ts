@@ -10,7 +10,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class Xml0Component {
 
-
   public Editor = ClassicEditorWithAutosave;
   public editorData: any;
   public config = {
@@ -41,5 +40,4 @@ export class Xml0Component {
       this.editorData = data;
     })
   }
-
 }
